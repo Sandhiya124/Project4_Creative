@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: clip;
+}
+/*--- Main headings ---*/
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+/*-------------------- Navbar -------------------*/
+.navbar {
+    height: 100px;
+    background-color: #fffaf8;
+    border-bottom: 1px solid #eee3df;
+}
+
+/*----- Logo ----*/
+.navbar-brand {
+    color: #4d2921;
+    text-decoration: none;
+}
+.cake-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4d8d0;
+    margin-right: 10px;
+}
+.cake-icon i {
+    font-size: 32px;
+    color: #ad5240;
+}
+.brand-text h4 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.brand-text span {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    color: #ad5240;
+}
+/*----- Sub nav -----*/
+.nav-link {
+    color: #29201e !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0 !important;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: #ad5240 !important;
+}
+/*----- Icons ----*/
+.icon {
+    font-size: 25px;
+    color: #39221e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon:hover {
+    color: #9b4e3e;
+    transform: translateY(-2px);
+}
+/*----- Order button -----*/
+.order-btn {
+    border: none;
+    background-color: #7d3c30;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s;
+      font-family: 'Poppins', sans-serif;
+}
+.order-btn:hover {
+    background: #57281f;
+    transform: translateY(-2px);
+}
+/*----------------------- Hero ------------------*/
+.hero {
+    padding-bottom: 100px;
+    background-color: #f8e7e1;
+    display: flex;
+}
+.hero .left{
+    width: 50%;
+    height: 100%;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.hero div h1:first-child{
+    color:#ad5240;
+    font-size: 60px;
+}
+.hero .text{
+    color: #ec4995;
+    font-size: 110px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.hero p{
+    width: 400px;
+    font-size: 18px;
+}
+.hero .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero img{
+    height: 500px;
+    width: 500px;
+}
+/*------------------ About us -------------------*/
+.aboutus{
+    padding-bottom: 100px;
+    width: 100%;
+}
+.headtext{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7d3c30;
+}
+.aboutus>h1{
+    color: #4d2921;
+}
+.aboutuscontainer{
+    display: flex;
+}
+.aboutus .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus .left img{
+    margin-top: 30px;
+    height: 450px;
+    width: 450px;
+    border-radius: 30px;
+}
+.aboutus .right{
+    width: 50%;
+    height: 100%;
+}
+.aboutus .right>p{
+    font-size: 18px;
+    width:400px ;
+}
+.aboutus .icons{
+    display: flex;
+    gap:50px
+}
+.aboutus .icons div{
+    display: flex;
+    gap:15px;
+}
+.aboutus .icons i{
+    font-size: 30px;
+    background-color: #f8e7e1;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #57281f;
+}
+/*------------------ Our Menu -------------------*/
+.ourmenu{
+   padding-bottom: 100px;
+    width: 100%;
+   background-color: #f8e7e1;
+}
+.ourmenu>h1{
+    color: #4d2921;
+}
+.menucontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:50px
+}
+.box{
+    height:380px;
+    width:250px;
+    background-color:#f0bdaa;
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    padding:0px;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.box img{
+    height:220px;
+    width:250px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    object-fit: cover;
+}
+.box div{
+    display:flex;
+    justify-content: center;
+}
+.box h5,p{
+    margin-left:20px
+}
+.box h5{
+    margin-top: 10px;
+}
+/*------------------ Reviews -------------------*/
+.reviews{
+    padding-bottom: 100px;
+    width: 100%;
+    background-color:#f8e7e1 ;
+}
+.reviews .rows{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:90px
+}
+.review-card {
+    background-color: whitesmoke;
+    width: 400px;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    transition: 0.4s ease;
+}
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+}
+/* Quote */
+.quote {
+    font-family: Georgia, serif;
+    font-size: 75px;
+    line-height: 50px;
+    color: #d97979;
+    font-weight: bold;
+}
+/* Review */
+.review-text {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-top: 25px;
+    min-height: 190px;
+}
+/* Customer */
+.customer {
+    gap: 18px;
+    margin-top: 25px;
+}
+.customer img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.customer h6 {
+    margin: 0 0 5px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+}
+.customer span {
+    font-size: 14px;
+    color: #777;
+}
+/*------------------ Reviews -------------------*/
+.contact-section {
+    min-height: 100vh;
+    background: #452c28;
+    padding: 80px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+/* Left Content */
+.contact-content {
+    padding-left: 30px;
+}
+.top-title {
+    color: #e99a8d;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+.top-title i {
+    font-size: 28px;
+    margin-right: 12px;
+}
+.contact-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    line-height: 1.25;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.description {
+    font-size: 18px;
+    color: #f2dddd;
+    margin-bottom: 45px;
+}
+/* Contact Details */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 20px;
+}
+.contact-item .icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #f7c5bd;
+    color: #452c28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.contact-item span {
+    font-size: 18px;
+    color: #f3dddd;
+}
+/* Form */
+.contact-form {
+    padding: 10px 20px;
+}
+.contact-form .form-control {
+    height: 80px;
+    background: transparent;
+    border: 2px solid #9b6259;
+    border-radius: 15px;
+    color: white;
+    font-size: 17px;
+    padding: 20px 28px;
+    margin-bottom: 25px;
+}
+.contact-form textarea.form-control {
+    height: 205px;
+    resize: none;
+}
+/* Placeholder */
+.contact-form .form-control::placeholder {
+    color: #e5cccc;
+}
+/* Focus */
+.contact-form .form-control:focus {
+    background: transparent;
+    border-color: #f3aaa0;
+    box-shadow: 0 0 10px rgba(243, 170, 160, 0.2);
+    color: white;
+}
+/* Button */
+.contact-form button {
+    width: 100%;
+    height: 78px;
+    border: none;
+    border-radius: 15px;
+    background: #f5aaa1;
+    color: #452c28;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.contact-form button:hover {
+    background: #ffd0ca;
+    transform: translateY(-3px);
+}
+/*------------------ Mobile View -------------------*/
+@media only screen and (min-width:300px) and (max-width:600px){
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+    .navbar-collapse {
+        background: #fffaf8;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .navbar-nav {
+        gap: 5px !important;
+    }
+    .nav-right {
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+    .nav-link {
+        padding: 8px 0 !important;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero .left{
+        width: 100%;
+        padding-left: 30px;
+    }
+    .aboutus .right {
+    width: 100%;
+    text-align: center;
+    }
+    .aboutuscontainer{
+        flex-direction: column;
+    }
+    .aboutus .icons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .right{
+        width: 100%;
+    }
+    .hero img {
+        height: 300px;
+        width: 300px
+    }
+    .hero p {
+         width: 300px;
+    }
+    .review-card{
+        width: 300px;
+    }
+    .aboutus .right>p {
+        width: 300px;
+    }
+    .aboutus .left img {
+    height: 300px;
+    width: 300px;
+    }
+    .order-btn {
+    padding: 12px 21px;
+    }
+    .aboutus .left{
+        width: 100%
+    }
+    .heading-section h1 {
+        font-size: 35px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    
+    .review-card {
+        min-height: auto;
+        padding: 30px;
+    }
+    .review-text {
+        min-height: auto;
+        font-size: 15px;
+    }
+    .contact-section {
+        padding: 60px 15px;
+    }
+    .contact-content {
+        padding-left: 0;
+    }
+    .contact-content h1 {
+        font-size: 38px;
+    }
+    .description {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .contact-item span {
+        font-size: 15px;
+    }
+    .contact-form {
+        padding: 0;
+    }
+    .contact-form .form-control {
+        height: 65px;
+    }
+    .contact-form textarea.form-control {
+        height: 160px;
+    }
+    .contact-form button {
+        height: 65px;
+    }
+}
+/*------------------ Tablet View -------------------*/
+@media only screen and (min-width:600px) and (max-width:900px){
+    .aboutuscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero img {
+    height: 400px;
+    width: 300px;
+}
+
+.review-card{
+        width: 345px;
+}
+
+.aboutus .icons {
+    gap:20px
+}
+}
+@media only screen and (min-width:900px) and (max-width:1200px){
+   .aboutus .icons {
+    gap:15px
+} 
+
+}
